@@ -161,6 +161,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 750px;
    
  }
 #result .profile .user-image .image a img{
@@ -171,6 +172,7 @@ body{
     border-bottom: 5px solid white;
     border-right: none;
     width: 100%;
+    /* height: 200px; */
 }
 
 
