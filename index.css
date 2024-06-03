@@ -1,241 +1,169 @@
-
-body {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-image: conic-gradient(rgb(154, 183, 204), rgb(163, 216, 222), rgb(95, 143, 231));
-}
-
-.container{
-    /* margin-top: 15%; */
-    background: none;
-    /* border: solid 2px; */
-    height: 300px;
-    width: 100%;
-   
-    color: rgb(2, 7, 249);
-    border-radius: 10px;
-    
-    justify-content: center;
-    align-items: center;
-    font: bold;
-    /* font-weight: 800; */
-}
-
-#myForm{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-
-.form-group,.btn{
-    min-height: 50px;
-    min-width: 250px;
-}
-/* #result{
-    margin-top: 50px;
-    margin-left: 10%;
-    color: aliceblue;
-    margin-bottom: 50px;
-    font-weight: bold;
-    font-size: 20px;
-    
-
-}
-#result h1{
-    margin-left: 20%;
-}
-#result img{
-    border-radius: 50px;
-}
-.res{
-   
-    text-align: center;
-    border: solid white 2px;
-    height: 25%;
-    width: 80%;
-    border-radius: 5px;
-} */
-
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center;
- */
-
- /* Making Changes from here  */
-/* #result{
-
-margin-left: 300px;
-}
-#result .profile{
-    height: 500px;
-    width: 80%;
-    background-color: rgba(18, 26, 39, 0.625);
-    border: 2px solid black;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-}
-#result .profile .user-image{
-    border-right: 5px solid white;
-    height: 100%;
-    width: 30%; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-/* }
-#result .profile .user-image .image{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-#result .profile .user-image .image a img{
-    height: 300px;
-    width: 250px;
-    border: 2px solid white;
-    border-radius: 50%;
-    margin-top: 100px; */
-    /* margin-left: 20px; */
-/* } */
-
-/* #result .profile .user-info{
-    display: flex;
-    align-items: center;
-} */
-
-/* #result .profile .user-info p{
-    margin-left: 10px;
-}
-#result .profile .user-info p i{
-   border: 1px solid white;
-   padding: 15px;
-   border-radius: 50%;
-   font-size: 20px;
-   color: azure;
-}
-#result .profile .user-info p i:hover{
-   color: cyan;
-   background-color: white;
-   border-color: cyan;
-   transition: 0.5s;
- }
-#result .profile .user-info span{
-    color: yellow;
-} */
-
-/* My new Work 
-Result Card */
-.profile{
-    /* display: block; */
-    text-align: center;
-    width: 25vw;
-    min-width: 300px;
-    min-height: 300px; 
-    /* margin: auto; */
-    margin: 10px;
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
-  transition: 0.3s;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 50px;
-  background: rgb(163, 216, 222);
-}
-
-
-/* #result{ */
-   
-    /* min-width: 50vw;
-    /* background-color: blue; */
-    
-  /* padding: 2px 16px; */
- 
-/* } */
-
-.profile .user-image .image{
-display: block;
-margin: auto;
-}
-.user-image img{
-    
-    height: 200px;
-    width: 200px;
-    padding: 20px;
-    display: block;
-    margin: auto;
-    border-radius: 50%;
-}
-.user-info-bio{
-     color: rgb(58, 97, 168);
-    font-weight: 400;
-    
-    /* font-size: 12px; */
-   
-}
-.user-info-container{
-    display: block;
-    margin: auto;
-}
-.user-info-container-grid{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 20px;
-    justify-content: center;
-    padding: 10px;
-}
-.user-info .name{
-    color: rgb(9, 88, 236);
-    font-weight: bold;
-}
-.items{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.items i{
-    position: relative;
-    height: 35px;
-    width: 35px;
-    background-color: aliceblue;
-    /* border: 2px solid rgb(9, 88, 236); */
-    background: linear-gradient(to right,rgba(44, 42, 42, 0.106),rgb(6, 135, 247));
-    border-radius: 50%;
-   
-}
-
-.items i::before{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-   
-}
-
-.items-content{
-    color: rgb(9, 88, 236);   
-    font-weight: 500;
-    margin-left: 2px;
-}
-
-.button{
-    min-height: 50px;
-    min-width: 190px;
-    background: linear-gradient(to right,rgba(9, 9, 9, 0.656),rgba(2, 103, 245, 0.766));
-    border-radius: 15px;
-    
-}
-.button a{
-    text-decoration: none;  
-    font-weight: 500;
-    font-size: 20px;
-    /* color: rgb(9, 88, 236); rgba(119, 122, 122, 0.208),rgba(77, 143, 236, 0.888)*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
     color: white;
 }
 
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Images/FewClouds.jpg);
+    background-repeat: no-repeat; 
+  
+    background-position-y: 100%;
+    
+}
+
+.container{
+    width: 400px;
+    height: min-content;
+    background-color: #00000081;
+    border-radius: 12px;
+    padding: 28px;
+    margin: 50px;
+
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.search-box input{
+    width: 84%;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #000;
+    background-color: #e6f5fb;
+    padding: 12px 16px;
+    border-radius: 14px;
+}
+
+.search-box input::placeholder{
+    color: #000;
+}
+
+.search-box button{
+    width: 46px;
+    height: 46px;
+    background-color: #e6f5fb;
+    width: 100px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 5px;
+    color: #000;
+    
+}
+
+.search-box button:hover{
+    color: #fff;
+    background-color: #ababab;
+    transition: 0.8s;
+}
+
+.weather-body{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+    display: none;
+}
+.weather-body img{
+    width: 60%;
+}
+
+.weather-box{
+    margin-block: 20px;
+    text-align: center;
+}
+
+.weather-box .temperature{
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+}
+
+.weather-box .temperature sup{
+    font-size: 20px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.weather-box .description{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.humidity, .wind{
+    display: flex;
+    align-items: center;
+}
+
+.humidity{
+    margin-left: 20px;
+}
+
+.wind{
+    margin-right: 20px;
+}
+
+.weather-details i{
+    font-size: 36px;
+}
+
+.weather-details .text{
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.text span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.location-not-found{
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.location-not-found h1{
+    font-size: 20px;
+    color: #6b6b6b;
+    margin-block-end: 15px;
+}
+.location-not-found img{
+    width: 80%;
+}
+.humidity>i{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 8px;
+}
+.wind>i{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 8px;
+}
